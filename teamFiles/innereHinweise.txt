@@ -1,0 +1,9 @@
+Hibernate is to hard for me i woud do Serialisations.
+
+Oksana versuchst bitt mit javaSkript
+so eine fenster zu schreiben wenn email oder password Falsh ist
+Unable to log in.
+Please check that you have entered your login and password correctly.
+Is the Caps Lock safely turned off?
+Maybe you are using the wrong input language? (e.g. German vs. English)
+Try typing your password in a text editor and pasting it into the "Password" field.

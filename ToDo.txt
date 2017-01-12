@@ -1,0 +1,20 @@
+sql trigger zu sequenz bearbeiten
+autoincrement Hibernate
+
+-Jsp Flo
+-Java Yevhen
+korrekte zeit bei showProduct muss noch gemacht werden
+
+abstände bei itemlist
+
+
+bei show und bei list überprüfen ob zeit nicht überschritten, wenn ja dann sold!
+
+
+
+Admin del kategorie löschen
+bei usecase löschen delete kategorie
+
+
+
+
