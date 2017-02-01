@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Calendar" %><%--
   Created by IntelliJ IDEA.
   User: florian
   Date: 29.11.16
@@ -56,14 +57,19 @@
 
             <h4>Title</h4>
             <h2>${titel}</h2>
+            <h4>Product ID  ${productId}</h4>
 
             <form method="post" name="form-watchlist" role="form">
                 <button type="submit" name="addToWatchlist" class="btn btn-primary">Add to my Watchlist</button>
             </form>
-            <br><br>
+            <hr><br>
             <h4>Category</h4>
             <h3>${category}</h3>
-            <br>
+            <hr><br>
+            <h4>Starting bid</h4>
+            <h4>${startPrice}</h4>
+
+
 
         </div>
 
@@ -74,30 +80,30 @@
 
         <div class="col-md-3">
 
-            <h5>Starting bid</h5>
-            <h4>${startPrice}</h4>
             <h4>Current price</h4>
             <h3>${currentPrice}</h3>
+            <hr>
+
             <script>
-                if (${!sold}) {
-                    document.write(" <h5> Duration Auction </h5> ");
-                    document.write(" <h4> ${durationAuction} </h4> ");
+                if (${!sold} && ${geloged}) {
+                    document.write(" <h4> Auction available till: </h4> ");
+                    document.write(" <h4> ${endDate} </h4> ");
                     document.write(" <form method='post' name='form-bitPrise' role='form'>");
                     document.write(" <input  class='form-control' type='number' name='bidPrice' required>");
                     document.write(" <p></p> ");
-                    document.write(" <button  type='submit' name='bidNow' class='btn btn-success'>Bid now</button>")
+                    document.write(" <button onclick=\"return confirm('Are you sure?')\"  type='submit' name='bidNow' class='btn btn-success'>Bid now</button>")
                     document.write(" </form>");
                 }
             </script>
-            <br><br>
+            <hr><br>
             <h4>Buy now</h4>
             <h3>${sofortKaufPrice}</h3>
 
             <script>
-                if (${!sold}) {
+                if (${!sold} && ${geloged}) {
 //                    Da ist arbeit reload page
                     document.write(" <form method='post' name='form-bayNow' role='form'>");
-                    document.write(" <button type='submit' name='bayNow' class='btn btn-warning'>Buy now</button> ");
+                    document.write(" <button onclick=\"return confirm('Are you sure?')\" type='submit' name='bayNow' class='btn btn-warning'>Buy now</button> ");
                     document.write(" </form>");
                 }
             </script>
@@ -118,7 +124,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <br>
+            <hr><br>
             <h4>Description</h4>
             <p>${description}</p>
         </div>

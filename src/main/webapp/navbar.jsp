@@ -20,7 +20,7 @@
             one.setAttribute("href", "userEdit");
             one.innerHTML = "<li><a href='userEdit'><span class='glyphicon glyphicon-user'></span> ${firstName}</a></li>";
             two.setAttribute("href", "exit");
-            two.innerHTML = "<li><a href='exit'><span class='glyphicon glyphicon-log-in'></span> Exit</a></li>";
+            two.innerHTML = "<li><a onclick=\"return confirm('Are you sure?')\" href='exit'><span class='glyphicon glyphicon-log-in'></span> Exit</a></li>";
         }
     }
     window.onload = init;
@@ -64,6 +64,8 @@
                         <li><a href='researcher'>Researcher</a></li>
                         <li role='separator' class='divider'></li>
                         <li><a href='watchlist'>My Watchlist</a></li>
+                        <li><a href='myAuctions'>My Auctions</a></li>
+
                     </ul>
                 </li>
                 <li><a href='userAdd' id='one'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>

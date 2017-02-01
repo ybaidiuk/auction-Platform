@@ -35,7 +35,9 @@ public class ProductsList extends HttpServlet {
 //      da noch probleme after 2 serch;
         String suchWort = req.getParameter("suchWort");
 //        System.out.println("list post  " + suchWort);
-        resp.sendRedirect("/productsList?suchWort=" + suchWort);
-        req.removeAttribute("suchWort");
+        if (suchWort == null) suchWort = "";
+        List<Product> list = Search.searchProducts(suchWort);
+        req.setAttribute("list", list);
+        req.getRequestDispatcher("productsList.jsp").forward(req, resp);
     }
 }

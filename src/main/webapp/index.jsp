@@ -28,12 +28,14 @@
             crossorigin='anonymous'></script>
 
 
+
     <%-- NEUE NAVBAR --%>
     <style>
         body {
             padding-top: 70px;
         }
     </style>
+
 
     <title>SWE-Projekt</title>
 </head>
@@ -115,7 +117,7 @@
             <h2>Genug vom Warten</h2>
             <p>Mittels Sofortkauf muss nicht das ganze Leben vorüber ziehen bis die neuen Sachen endlich greifbar
                 sind</p>
-            <a class='btn btn-default' href='userAdd'>Subscribe</a>
+            <a class='btn btn-default' href='userAdd' >Subscribe</a>
         </div>
         <!-- /.col-md-4 -->
     </div>
@@ -123,6 +125,9 @@
 
 </div>
 <!-- /.container -->
+
+
+
 
 <jsp:include page="footer.jsp"/>
 

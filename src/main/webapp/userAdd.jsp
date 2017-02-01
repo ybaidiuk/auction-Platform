@@ -236,7 +236,7 @@
 
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="btn btn-primary btn-block">Sign Up
+                <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-primary btn-block">Sign Up
                 </button>
                 <br>
                 <p style="text-align:center">Already have an account? <a href="signin">Log In</a></p>

@@ -173,7 +173,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                <button onclick="return confirm('Are you sure? Product can not be edited after confirmation!')" type="submit" class="btn btn-primary btn-block">Submit</button>
             </div>
         </div>
     </form> <!-- /form -->

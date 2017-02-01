@@ -177,7 +177,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="btn btn-primary btn-block">Save</button>
+                <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-primary btn-block">Save</button>
             </div>
         </div>
     </form> <!-- /form -->
